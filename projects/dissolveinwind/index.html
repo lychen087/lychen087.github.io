@@ -2,12 +2,12 @@
 
 <html>
 	<head>
-		<title>Dissoved in Winds</title>
+		<title>Dissove in Wind</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="icon" href="../../images/logo.png" type="image/x-icon">
-		<link rel="stylesheet" href="../../assets/css/main.css" />
 		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -17,7 +17,7 @@
 
 			<!-- Header -->
 			<header id="header">
-				<h1>Dissoved in Winds</h1>
+				<h1 style="font-weight: 500;">Dissolve in Wind</h1>
 				<p>An interactive multimedia installation transforming Hsinchu’s winds into dynamic soundscapes and AI-generated visual forms.</p>
 			</header>
 
@@ -30,8 +30,11 @@
 					<!-- <h2>Magna feugiat lorem</h2> -->
 					
 					<div class="image-container">
-						<img src="images/img1.png" alt="fig-1" />
-						<div class="caption">Fig. 1: Dissolved in Winds – Artistic installation rendering</div>
+						<!-- <img src="images/main.png" alt="fig-1" /> -->
+						<video width="100%" controls>
+							<source src="videos/demo_full_1.mp4" type="video/mp4">
+						</video>
+						<div class="caption">Video. 1: Dissolve in Wind – Artistic installation rendering</div>
 					</div>
 					<h2 style="margin-top: 2rem;">Project Statement</h2>
 					<p>
@@ -57,9 +60,47 @@
 						“Dissolve in Wind” reimagines Hsinchu’s iconic winds as an interactive experience that strengthens the connection between nature and humanity through technology. 
 						By visualizing and sonifying the wind’s force, the artwork invites audiences to reflect on how natural forces shape human experiences, fostering a deeper understanding of the intricate relationship between humans and nature.
 					</p>
-					<video width="100%" controls>
-						<source src="videos/demo_full_1.mp4" type="video/mp4">
-					</video>
+					
+					<div class="slideshow-container" style="margin-top: 2rem; width: 80%;">
+						<div class="mySlides fade">
+							<div class="numbertext">1 / 5</div>
+							<img src="images/img1.jpg" style="width:100%">
+							<!-- <div class="text">Caption Text</div> -->
+						</div>
+					  
+						<div class="mySlides fade">
+							<div class="numbertext">2 / 5</div>
+							<img src="images/img2.jpg" style="width:100%">
+							<!-- <div class="text">Caption Two</div> -->
+						</div>
+					  
+						<div class="mySlides fade">
+							<div class="numbertext">3 / 5</div>
+							<img src="images/img3.jpg" style="width:100%">
+							<!-- <div class="text">Caption Three</div> -->
+						</div>
+						<div class="mySlides fade">
+							<div class="numbertext">4 / 5</div>
+							<img src="images/img4.jpg" style="width:100%">
+							<!-- <div class="text">Caption Three</div> -->
+						</div>
+						<div class="mySlides fade">
+							<div class="numbertext">5 / 5</div>
+							<img src="images/img5.jpg" style="width:100%">
+							<!-- <div class="text">Caption Three</div> -->
+						</div>
+
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					</div>
+					<div style="text-align:center">
+						<span class="dot" onclick="currentSlide(1)"></span>
+						<span class="dot" onclick="currentSlide(2)"></span>
+						<span class="dot" onclick="currentSlide(3)"></span>
+						<span class="dot" onclick="currentSlide(4)"></span>
+						<span class="dot" onclick="currentSlide(5)"></span>
+					</div>
+					
 				</section>
 
 			</div>
@@ -71,13 +112,14 @@
 		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<!-- <script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script> -->
+		<script src="script.js"></script>
 
 	</body>
 </html>
