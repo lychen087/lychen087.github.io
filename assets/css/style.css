@@ -1,0 +1,95 @@
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+    padding: 2rem;
+}
+.tab-link {
+    cursor: pointer;
+}
+.tab-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid #3498db;
+}
+
+.filters {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.filters .year-filter a {
+    margin-right: 10px;
+    color: darkred;
+    text-decoration: none;
+}
+
+.filters .year-filter a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.projects {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-item {
+    /* background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s; */
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+}
+
+.project-image img {
+    /* width: 100%;
+    height: auto;
+    display: block; */
+    width: 150px;
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.project-details {
+    /* padding: 15px; */
+    flex: 1;
+}
+
+.project-details h3 {
+    font-size: 18px;
+    margin-bottom: 4px;
+    color: #333;
+}
+
+.project-details p {
+    margin: 0px 0;
+    font-size: 14px;
+}
+
+.project-details a {
+    color: darkred;
+    text-decoration: none;
+}
+
+.project-details a:hover {
+    text-decoration: underline;
+}
